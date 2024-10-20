@@ -1,9 +1,9 @@
 <?php
 session_start();
-$DB_HOST=$_ENV["DB_HOST"];
+$DB_HOST=$_ENV["mysql.railway.internal"];
 $DB_USER=$_ENV["root"];
 $DB_PASSWORD=$_ENV["dXoUyHEkCIPDBDyqPMKtQpbxloRTJGgF"];
-$DB_NAME=$_ENV["mysql.railway.internal"];
+$DB_NAME=$_ENV["railway"];
 $DB_PORT=$_ENV["3306"];
 
 $db=mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT");
