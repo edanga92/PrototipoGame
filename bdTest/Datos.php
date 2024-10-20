@@ -1,11 +1,7 @@
 <?php
-$servidor = 'localhost';
-$usuario  = 'root';
-$pass     ='';
-$baseDatos = 'game';
 
+include "ConexionBD.php";
 
-$conexion = new mysqli($servidor,$usuario,$pass,$baseDatos);
 
 $uss     = $_GET['uss'];
 
